@@ -24,6 +24,7 @@ Widget::~Widget()
 void Widget::on_treeView_clicked(const QModelIndex &index)
 {
     strPath = dirModel->fileInfo(index).absoluteFilePath();
-    qDebug() << "Your path: " << strPath;
+    //qDebug() << "Your path: " << strPath;
+
 }
 
