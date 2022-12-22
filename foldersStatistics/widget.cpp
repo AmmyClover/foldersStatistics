@@ -67,7 +67,8 @@ void Widget::detection_cur_dir(QString dirPath)
 
     backgroundThread = QtConcurrent::run(start_scan, dirPath);
 
-    // Лучшего решения не нашел((, надо будет почитать доки
+    // Лучшего решения не нашел((, надо будет почитать доки QtConcurrent
+    //      ,чтобы хотя бы подчищать лишние потоки
     while(!backgroundThread.isFinished())
     {
         qApp->processEvents();
