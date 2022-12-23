@@ -47,7 +47,7 @@ void Widget::on_pushButton_clicked()
 {
     if(backgroundThread.isRunning())
     {
-        backgroundThread.end();
+        backgroundThread.close();
     }
     detection_cur_dir(dirPath);
 }
